@@ -31,8 +31,8 @@ public class TeacherController {
 	public String getTeacherByDept1(@PathVariable("dept") String dept) {
 	List<String> list = Arrays.asList("amar","swetha","sumi");
 	
-	if(dept.equals("cse")) {
-		list = Arrays.asList("amar","swetha","sumi");		
+	if(dept.equals("ece")) {
+		list = Arrays.asList("sdg","gjhy","trjhu");		
 	}
 	return list.toString();
 	}
