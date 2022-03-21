@@ -27,6 +27,15 @@ public class TeacherController {
 	}
 	return list.toString();
 	}
+	@GetMapping(path="/teachers/{dept}")
+	public String getTeacherByDept1(@PathVariable("dept") String dept) {
+	List<String> list = Arrays.asList("amar","swetha","sumi");
+	
+	if(dept.equals("cse")) {
+		list = Arrays.asList("amar","swetha","sumi");		
+	}
+	return list.toString();
+	}
 }
 
 
